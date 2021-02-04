@@ -22,4 +22,3 @@ Secret key is obtained by decoding QR code image.
  - [RFC 6238](https://tools.ietf.org/html/rfc6238)
  - [Time-based One-time Password algorithm - WIkipedia](https://en.wikipedia.org/wiki/Time-based_One-time_Password_algorithm)
  - [HMAC-based One-time Password algorithm - Wikipedia](https://en.wikipedia.org/wiki/HMAC-based_One-time_Password_algorithm)
- 

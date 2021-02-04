@@ -13,9 +13,8 @@ extension Array where Element == UInt8 {
         let bytes = Array<UInt8>(data)
         //if CFByteOrderGetCurrent() == Int(CFByteOrderLittleEndian.rawValue) {
             self.init(bytes.reversed())
-        /*} else {
-            self.init(bytes)
-        }*/
+        //} else {
+        //    self.init(bytes)
+        //}
     }
 }
-

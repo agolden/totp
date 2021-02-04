@@ -2,12 +2,12 @@ import Foundation
 import TotpCore
 import Base32
 
-if CommandLine.arguments.count < 2 {
+/*if CommandLine.arguments.count < 2 {
     print("Usage: \(String(describing: CommandLine.arguments.first)) <secret>")
     exit(1)
-}
+}*/
 
-guard let secret = base32Decode(CommandLine.arguments[1]) else {
+guard let secret = base32Decode("MYFAKEKEY") else {
     exit(1)
 }
 
