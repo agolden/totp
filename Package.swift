@@ -4,7 +4,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "Totp",
+    name: "TotpCore",
     products: [
     .library(
       name: "TotpCore",
