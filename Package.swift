@@ -5,8 +5,15 @@ import PackageDescription
 
 let package = Package(
     name: "Totp",
+    products: [
+    .library(
+      name: "TotpCore",
+      targets: ["TotpCore"]
+    )
+  ],
+  
     dependencies: [
-        .package(url: "https://github.com/krzyzanowskim/CryptoSwift.git", .upToNextMinor(from: "0.8.0")),
+        .package(url: "https://github.com/krzyzanowskim/CryptoSwift.git", from: "1.3.8"),
         .package(url: "https://github.com/norio-nomura/Base32.git", .upToNextMinor(from: "0.6.0")),
 
     ],

@@ -11,10 +11,11 @@ extension Array where Element == UInt8 {
         var value = uint64
         let data = Data(bytes: &value, count: MemoryLayout.size(ofValue: value))
         let bytes = Array<UInt8>(data)
-        if CFByteOrderGetCurrent() == Int(CFByteOrderLittleEndian.rawValue) {
+        //if CFByteOrderGetCurrent() == Int(CFByteOrderLittleEndian.rawValue) {
             self.init(bytes.reversed())
-        } else {
+        /*} else {
             self.init(bytes)
-        }
+        }*/
     }
 }
+
